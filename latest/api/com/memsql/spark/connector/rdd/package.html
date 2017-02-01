@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>rdd - com.memsql.spark.connector.rdd</title>
@@ -9,6 +8,11 @@
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
@@ -24,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.memsql">memsql</a>.<a href="../../package.html" class="extype" name="com.memsql.spark">spark</a>.<a href="../package.html" class="extype" name="com.memsql.spark.connector">connector</a></p>
-        <h1>rdd</h1>
+        <h1>rdd</h1><span class="permalink">
+      <a href="../../../../../index.html#com.memsql.spark.connector.rdd.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -67,12 +75,16 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ExplainRow.html"><span class="name">ExplainRow</span></a><span class="params">(<span name="selectType">selectType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="extra">extra: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="ExplainRow.html"><span class="name">ExplainRow</span></a><span class="params">(<span name="selectType">selectType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="extra">extra: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.memsql.spark.connector.rdd.package@ExplainRowextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
-    </li><li name="com.memsql.spark.connector.rdd.MemSQLRDD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MemSQLRDD[T]extendsRDD[T]withLoggingwithProductwithSerializable"></a>
+    </li><li name="com.memsql.spark.connector.rdd.MemSQLRDD" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MemSQLRDD[T]extendsRDD[T]withProductwithSerializable"></a>
       <a id="MemSQLRDD[T]:MemSQLRDD[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,10 +92,24 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MemSQLRDD.html"><span class="name">MemSQLRDD</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="sc">sc: <a href="https://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.SparkContext" class="extype" target="_top">SparkContext</a></span>, <span name="cluster">cluster: <a href="../MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="sql">sql: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sqlParams">sqlParams: <span class="extype" name="scala.Seq">Seq</span>[<a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Any" class="extype" target="_top">Any</a>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="mapRow">mapRow: (<span class="extype" name="java.sql.ResultSet">ResultSet</span>) ⇒ <span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span> = <span class="defval" name="((x$1: java.sql.ResultSet) =&gt; MemSQLRDD.resultSetToArray(x$1))">...</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.reflect.ClassTag" class="extype" target="_top">ClassTag</a>[<span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span>]</span>)</span><span class="result"> extends <a href="https://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.rdd.RDD" class="extype" target="_top">RDD</a>[<span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span>] with <a href="https://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.Logging" class="extype" target="_top">Logging</a> with <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="MemSQLRDD.html"><span class="name">MemSQLRDD</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="sc">sc: <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.SparkContext" class="extype" target="_top">SparkContext</a></span>, <span name="cluster">cluster: <a href="../MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="sql">sql: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sqlParams">sqlParams: <span class="extype" name="scala.Seq">Seq</span>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a>] = <span class="symbol">Nil</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="mapRow">mapRow: (<span class="extype" name="java.sql.ResultSet">ResultSet</span>) ⇒ <span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span> = <span class="symbol"><span class="name"><a href="MemSQLRDD$.html">MemSQLRDD.resultSetToArray</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.reflect.ClassTag" class="extype" target="_top">ClassTag</a>[<span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span>]</span>)</span><span class="result"> extends <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.rdd.RDD" class="extype" target="_top">RDD</a>[<span class="extype" name="com.memsql.spark.connector.rdd.MemSQLRDD.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">An <a href="https://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.rdd.RDD" class="extype" target="_top">org.apache.spark.rdd.RDD</a> that can read data from a MemSQL database based on a SQL query.</p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.memsql.spark.connector.rdd.package@MemSQLRDD[T]extendsRDD[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.rdd.RDD" class="extype" target="_top">org.apache.spark.rdd.RDD</a> that can read data from a MemSQL database based on a SQL query.</p><div class="fullcomment"><div class="comment cmt"><p>An <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.rdd.RDD" class="extype" target="_top">org.apache.spark.rdd.RDD</a> that can read data from a MemSQL database based on a SQL query.</p><p>If the given query supports it, this RDD will read data directly from the
+MemSQL cluster's leaf nodes rather than from the master aggregator, which
+typically results in much faster reads.  However, if the given query does
+not support this (e.g. queries involving joins or GROUP BY operations), the
+results will be returned in a single partition.
+</p></div><dl class="paramcmts block"><dt class="param">cluster</dt><dd class="cmt"><p>A connected MemSQLCluster instance.</p></dd><dt class="param">sql</dt><dd class="cmt"><p>The text of the query. Can be a prepared statement template,
+   in which case parameters from sqlParams are substituted.</p></dd><dt class="param">sqlParams</dt><dd class="cmt"><p>The parameters of the query if sql is a template.</p></dd><dt class="param">databaseName</dt><dd class="cmt"><p>Optionally provide a database name for this RDD.
+                    This is required for Partition Pushdown</p></dd><dt class="param">mapRow</dt><dd class="cmt"><p>A function from a ResultSet to a single row of the desired
+  result type(s).  This should only call getInt, getString, etc; the RDD
+  takes care of calling next.  The default maps a ResultSet to an array of
+  Any.</p></dd></dl></div>
     </li><li name="com.memsql.spark.connector.rdd.MemSQLRDDPartition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MemSQLRDDPartitionextendsPartition"></a>
       <a id="MemSQLRDDPartition:MemSQLRDDPartition"></a>
@@ -93,9 +119,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MemSQLRDDPartition.html"><span class="name">MemSQLRDDPartition</span></a><span class="result"> extends <a href="https://spark.apache.org/docs/1.5.2/api/scala/index.html#org.apache.spark.Partition" class="extype" target="_top">Partition</a></span>
+        <a href="MemSQLRDDPartition.html"><span class="name">MemSQLRDDPartition</span></a><span class="result"> extends <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.Partition" class="extype" target="_top">Partition</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.memsql.spark.connector.rdd.package@MemSQLRDDPartitionextendsPartition" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -113,9 +143,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MemSQLRDD$.html"><span class="name">MemSQLRDD</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.10.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="MemSQLRDD$.html"><span class="name">MemSQLRDD</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.memsql.spark.connector.rdd.package@MemSQLRDD" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -142,6 +176,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+
+
     </body>
       </html>
