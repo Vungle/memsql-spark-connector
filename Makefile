@@ -51,8 +51,8 @@ docs: clean
 package: docs build
 	mkdir -p distribution/dist/memsql-$(VERSION)
 	cp README.md distribution/dist/memsql-$(VERSION)/
-	cp target/scala-2.10/MemSQL-assembly-$(VERSION).jar distribution/dist/memsql-$(VERSION)/
-	cp -r target/scala-2.10/unidoc/ distribution/dist/memsql-$(VERSION)/docs/
+	cp target/scala-2.11/MemSQL-assembly-$(VERSION).jar distribution/dist/memsql-$(VERSION)/
+	cp -r target/scala-2.11/unidoc/ distribution/dist/memsql-$(VERSION)/docs/
 	cd distribution/dist; \
 	tar cvzf memsql-$(VERSION).tar.gz memsql-$(VERSION)/
 
